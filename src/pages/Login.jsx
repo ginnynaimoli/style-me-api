@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { login } from '../redux/apiCalls'
 import { mobile } from '../responsive'
@@ -46,7 +47,7 @@ const Button = styled.button`
     cursor: not-allowed
   }
 `
-const Link = styled.a`
+const Reg = styled(Link)`
   margin: 5px 0px;
   font-size: 12px;
   color: black;
@@ -78,8 +79,8 @@ const Login = () => {
           
           <Button onClick={handleLogin} disabled={isFetching}>LOG IN</Button>
           {error && <Error>Oops! Something went wrong</Error>}
-          <Link>FORGOT PASSWORD?</Link>
-          <Link to='/register'>CREATE A NEW ACCOUNT</Link>
+          <Reg>FORGOT PASSWORD?</Reg>
+          <Reg to='/register'>CREATE A NEW ACCOUNT</Reg>
         </Form>
       </Wrapper>
     </Container>

@@ -8,12 +8,13 @@ import Products from '../components/Products'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import { mobile } from '../responsive'
+import { Link } from 'react-router-dom'
 
 const Header = styled.h2`
   font-size: 2rem;
   margin: 50px auto 0px 25px;
 `
-const Link = styled.a`
+const All = styled(Link)`
   color: black;
   display: flex;
   justify-content: right;
@@ -29,7 +30,7 @@ const Home = () => {
       <Navbar />
       <Slider />
       <Header>NEW ARRIVALS</Header>
-      <Link to='/products'>SHOP ALL</Link>
+      <All to='/products'>SHOP ALL</All>
       <Products />
       <Header>SHOP BY CATEGORIES</Header>
       <Categories />
