@@ -210,9 +210,6 @@ const Cart = () => {
     console.log(product)
   }
 
-  console.log(cart)
-
-
   return (
     <Container>
       <Navbar />

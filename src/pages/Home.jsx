@@ -29,7 +29,7 @@ const Home = () => {
       <Navbar />
       <Slider />
       <Header>NEW ARRIVALS</Header>
-      <Link href='/products'>SHOP ALL</Link>
+      <Link to='/products'>SHOP ALL</Link>
       <Products />
       <Header>SHOP BY CATEGORIES</Header>
       <Categories />

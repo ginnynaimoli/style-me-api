@@ -67,7 +67,6 @@ const Login = () => {
     e.preventDefault()
     login(dispatch, { username, password })
   } 
-  console.log(error)
 
   return (
     <Container>
@@ -80,7 +79,7 @@ const Login = () => {
           <Button onClick={handleLogin} disabled={isFetching}>LOG IN</Button>
           {error && <Error>Oops! Something went wrong</Error>}
           <Link>FORGOT PASSWORD?</Link>
-          <Link href='/register'>CREATE A NEW ACCOUNT</Link>
+          <Link to='/register'>CREATE A NEW ACCOUNT</Link>
         </Form>
       </Wrapper>
     </Container>
