@@ -64,7 +64,7 @@ const MenuItems = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
-  ${mobile({ fontSize: "12px", marginLeft: '0px', marginRight: "5px", cursor: "pointer" })}
+  ${mobile({ fontSize: "14px", marginLeft: '0px', marginRight: "5px", cursor: "pointer" })}
 `
 
 const Navbar = () => {
